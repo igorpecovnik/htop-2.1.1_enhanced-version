@@ -52,7 +52,7 @@ You can modify, fix or enhance the source code to run on any arm/arm64 single bo
 Before you build the package, make sure you install all depencies:
 
 
-        sudo apt-get install debhelper libncurses5-dev libncursesw5-dev python-minimal:native
+        sudo apt-get install pkg-config debhelper libncurses5-dev libncursesw5-dev python-minimal:native
 
 
 
