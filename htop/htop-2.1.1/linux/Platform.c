@@ -175,6 +175,9 @@ int Platform_getCpuTemp() {
    if (!fd) {
        fd = fopen("/sys/devices/virtual/thermal/thermal_zone0/temp", "r");
    }
+   if (!fd) {
+       fd = fopen("/sys/class/hwmon/hwmon0/temp1_input", "r");
+   }
    if (fd) {
       int n = fscanf(fd, "%d", &Temp);
       fclose(fd);
